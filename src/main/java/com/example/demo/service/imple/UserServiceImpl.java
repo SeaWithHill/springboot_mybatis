@@ -9,46 +9,43 @@ import com.example.demo.dao.UserDao;
 import com.example.demo.entity.User;
 import com.example.demo.service.UserService;
 
-
 @Service
 public class UserServiceImpl implements UserService {
 
-	
-	 @Autowired
-	    private UserDao userDao;
-	    
-	    @Override
-	    public List<User> getUsers() {
-	        // TODO Auto-generated method stub
-	        return userDao.findAllUser();
-	    }
+	@Autowired
+	private UserDao userDao;
 
-	    @Override
-	    public User findUserById(int id) {
-	        // TODO Auto-generated method stub
-	        return userDao.findUserById(id);
-	    }
+	@Override
+	public List<User> getUsers() {
+		// TODO Auto-generated method stub
+		return userDao.findAllUser();
+	}
 
-	    @Override
-	    public boolean updateUserById(User user) {
-	        // TODO Auto-generated method stub
-	        userDao.updateUserById(user);
-	        return true;
-	    }
+	@Override
+	public User findUserById(int id) {
+		// TODO Auto-generated method stub
+		return userDao.findUserById(id);
+	}
 
-	    @Override
-	    public boolean insertUser(User user) {
-	        // TODO Auto-generated method stub
-	        userDao.insertUser(user);
-	        return true;
-	    }
+	@Override
+	public boolean updateUserById(User user) {
+		// TODO Auto-generated method stub
+		userDao.updateUserById(user);
+		return true;
+	}
 
-	    @Override
-	    public boolean deleteById(int id) {
-	        // TODO Auto-generated method stub
-	        userDao.deleteById(id);
-	        return true;
-	    }
-	
-	
+	@Override
+	public boolean insertUser(User user) {
+		// TODO Auto-generated method stub
+		userDao.insertUser(user);
+		return true;
+	}
+
+	@Override
+	public boolean deleteById(int id) {
+		// TODO Auto-generated method stub
+		userDao.deleteById(id);
+		return true;
+	}
+
 }
