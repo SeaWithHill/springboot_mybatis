@@ -2,17 +2,17 @@ package com.example.demo.service;
 
 import java.util.List;
 
-import com.example.demo.entity.User;
+import com.example.demo.entity.UserDemo;
 
 public interface UserService {
 
-	public List<User> getUsers();
+	public List<UserDemo> getUsers();
 
-	public User findUserById(int id);
+	public UserDemo findUserById(int id);
 
-	public boolean updateUserById(User user);
+	public boolean updateUserById(UserDemo user);
 
-	public boolean insertUser(User user);
+	public boolean insertUser(UserDemo user);
 
 	public boolean deleteById(int id);
 

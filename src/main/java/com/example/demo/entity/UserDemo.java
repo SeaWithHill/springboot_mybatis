@@ -1,6 +1,6 @@
 package com.example.demo.entity;
 
-public class User {
+public class UserDemo {
 	private int id;
 	public int getId() {
 		return id;
